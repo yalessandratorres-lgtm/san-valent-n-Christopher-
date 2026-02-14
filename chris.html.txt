@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Chris 💖</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Script -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div id="inicio" class="pantalla-inicio" onclick="abrirPregunta()">
+  <h1 class="titulo">💗 Haz clic para abrir 💗</h1>
+</div>
+
+<div id="pregunta" class="oculto">
+  <h2 class="titulo">
+    Chris, mi güero, mi titoteo…<br>
+    ¿Quieres ser mi San Valentín? 💘
+  </h2>
+
+  <button onclick="respuestaSi()">Sí 💕</button>
+  <button onclick="respuestaNo()">No 😿</button>
+
+  <div id="reaccion"></div>
+</div>
+
+<div id="arbol" class="oculto">
+  <h1 class="titulo">Para ti, Chris 🌸</h1>
+
+  <p class="mensaje">
+    Gracias por iluminar mis días desde que te conocí.<br>
+    Me has hecho muy feliz y espero que así siga siendo<br>
+    por mucho, mucho tiempo más.<br><br>
+    Te quiero mucho 💖
+  </p>
+
+  <div class="contador" id="contador"></div>
+
+  <div class="arbol">
+    <img src="https://i.imgur.com/9M0QZzA.png" alt="Árbol de corazones">
+  </div>
+
+  <button onclick="document.getElementById('musica').play()">🎶 Reproducir música</button>
+
+  <audio id="musica" loop>
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Valentines/Kevin_MacLeod_-_Carefree.mp3">
+  </audio>
+</div>
+
+</body>
+</html>
+
